@@ -14,7 +14,7 @@
         ///   - Criamos 5 threads.
         ///   - Cada thread simula um trabalho pesado.
         ///   - As threads rodam em paralelo (se tiver núcleos disponíveis).
-        ///   - A thread principal(execute) fica esperando.
+        ///   - A thread principal(execute) não fica esperando.
         /// </summary>
         public static void Execute()
         {
@@ -30,7 +30,7 @@
 
         /// <summary>
         /// - O que acontece aqui?
-        ///    - Mesmo exemplo acima, porém a thead principal (ExecuteAndWait) fica agurdando.
+        ///    - Mesmo exemplo acima, porém a thead principal (ExecuteAndWait) fica esperando.
         /// </summary>
         internal static void ExecuteAndWait()
         {
