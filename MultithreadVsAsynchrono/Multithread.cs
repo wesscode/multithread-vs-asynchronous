@@ -27,5 +27,30 @@
             Console.WriteLine("Execute thread continue...");
             Console.ReadLine();
         }
+
+        /// <summary>
+        /// - O que acontece aqui?
+        ///    - Mesmo exemplo acima, porém a thead principal (ExecuteAndWait) fica agurdando.
+        /// </summary>
+        internal static void ExecuteAndWait()
+        {
+            Thread[] threads = new Thread[5];
+
+            for (int i = 0; i < threads.Length; i++)
+            {
+                int id = i; // Para identificar a thread
+                threads[i] = new Thread(() => HardProcess(id));
+                threads[i].Start();
+            }
+
+            // Aguarda todas as threads concluírem
+            for (int i = 0; i < threads.Length; i++)
+            {
+                threads[i].Join();
+            }
+
+            Console.WriteLine("Todas as threads foram concluídas!");
+            Console.ReadLine();
+        }
     }
 }
