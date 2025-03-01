@@ -5,7 +5,7 @@
         internal static void HardProcess(object id)
         {
             Console.WriteLine($"Thread {id} started.");
-            Thread.Sleep(2000);  // simulating hard process (calc, process img, etc.)
+            Thread.Sleep(2000);  // Simulando trabalho pesado (cálculo, etc.)
             Console.WriteLine($"Thread {id} ended.");
         }
 
@@ -24,7 +24,7 @@
                 thread.Start(i);
             }
 
-            Console.WriteLine("Execute thread continue...");
+            Console.WriteLine("Execute thread continuando...");
             Console.ReadLine();
         }
 
