@@ -2,4 +2,4 @@
 
 //Multithread.Execute();
 
-Asynchrono.Execute();
+await Asynchrono.Execute();
