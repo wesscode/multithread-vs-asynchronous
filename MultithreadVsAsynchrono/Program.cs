@@ -1,4 +1,5 @@
 ﻿using MultithreadVsAsynchrono;
 
 //Multithread.Execute();
-Multithread.ExecuteAndWait();
+
+Asynchrono.Execute();
