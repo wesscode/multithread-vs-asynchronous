@@ -11,7 +11,7 @@
 
         /// <summary>
         /// - O que acontece aqui?
-        ///   - Criamos 5 threads.
+        ///   - Criamos 5 threads para processamento CPU-Bound.
         ///   - Cada thread simula um trabalho pesado.
         ///   - As threads rodam em paralelo (se tiver núcleos disponíveis).
         ///   - A thread principal(execute) não fica esperando.
