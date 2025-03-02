@@ -2,4 +2,6 @@
 
 //Multithread.Execute();
 
-await Asynchrono.Execute();
+//await Asynchrono.Execute();
+
+await Combine.Execute();
