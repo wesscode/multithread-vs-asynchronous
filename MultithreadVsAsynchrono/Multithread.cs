@@ -29,6 +29,7 @@
         }
 
         /// <summary>
+        /// Extra!
         /// - O que acontece aqui?
         ///    - Mesmo exemplo acima, porém a thead principal (ExecuteAndWait) fica esperando.
         /// </summary>
