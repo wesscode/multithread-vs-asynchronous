@@ -60,3 +60,12 @@
     </tr>  
   </tbody>
 </table>
+
+## Sobre o projeto de exemplo
+- Para testar o projeto:
+  - Realize o clone do repositório
+  - Instale o sdk .net 9
+  - Descomente na classe program o método de exemplo que deseja executar.
+  - Asychrono: Implementação utilizando processamento assincrono
+  - Multithead: Implementação utilizando multithead
+  - Combine: Implementação ultilizando ambos no processamento
